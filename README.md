@@ -1,20 +1,12 @@
 # Camel AMQ QuickStart
 
-This quickstart demonstrates how to connect to EnMasse (MaaS) and use JMS messaging between two Camel routes.
+This quickstart demonstrates how to connect to an Artemis broker on OpenShift and use JMS messaging between two Camel routes.
 
-This quickstart requires EnMasse to have been deployed and running first. Follow the directions at
-
-http://enmasse.io/documentation
-
-to install EnMasse into OpenShift or Kubernetes. There is a `deploy.sh` script that will help you install EnMasse. Once EnMasse is installed, please create an incomingOrders queue using the EnMasse console.
 
 ### Configuration
 
-The quickstart must run on a Openshift project different from the one where EnMasse is deployed.
-
 Before running the quickstart, you need to configure the `src/main/fabric8/deployment.yml` file in order to 
-use the correct remote instance of AMQ EnMasse.
-The `AMQP_SERVICE_NAME` environment variable must point to the hostname of the external "messaging" route exposed by EnMasse.
+use the correct remote instance of the Artemis Broker.
 
 ### Building
 
